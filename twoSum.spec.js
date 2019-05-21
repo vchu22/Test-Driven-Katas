@@ -6,7 +6,6 @@ describe('twoSum', () => {
         expect(Array.isArray(twoSum([1, 1], 2))).to.equal(true)
     })
     it('returns the first index pair of numbers occurred in the array which add up to the target number in the second parameter', () => {
-        
         expect(twoSum([1, 2, 3], 5)).to.eql([1, 2])
     })
     it('returns an empty array if no pairs add up to the target number', () => {
@@ -14,5 +13,6 @@ describe('twoSum', () => {
     })
     it('returns empty array when the input array is either empty or has only one number', () => {
         expect(twoSum([], 1).length).to.equal(0)
+        expect(twoSum([2], 1).length).to.equal(0)
     })
 })
